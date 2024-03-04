@@ -1,0 +1,349 @@
+body {
+  font-family: Amatic SC;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(117, 116, 116);
+}
+a {
+  text-decoration: none;
+}
+p {
+  color: #fff;
+}
+
+.top-bar {
+  background-color: #44c4c4ff;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+img {
+  max-width: 100%;
+}
+
+.logo,
+.perfil,
+.carrito {
+  text-decoration: none;
+  max-width: 50%;
+  margin: 0 10px;
+}
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #666;
+  max-width: 200px;
+  min-width: 80px;
+  overflow: auto;
+  position: fixed !important;
+  z-index: 1;
+  display: none;
+}
+
+@keyframes translateright {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.transladar_derecha {
+  animation-name: translateright;
+  animation-duration: 250ms;
+  display: block;
+}
+.open_button {
+  background-color: transparent;
+  border-width: 0px;
+}
+.subdivisions {
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.subdivision,
+.back-button {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.main-content {
+  padding: 20px;
+}
+.perfil-content {
+  width: 50%;
+  margin: 20px auto; /* Centra el contenido y agrega espacio */
+  padding: 20px;
+  border: 1px solid #ccc; /* Agrega bordes */
+  border-radius: 10px; /* Añade bordes redondeados */
+  box-sizing: border-box; /* Asegura que el tamaño total incluya bordes y relleno */
+}
+
+form {
+  text-align: center; /* Centra el contenido del formulario */
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+.username-group,
+.password-group,
+.button-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Valoraciones */
+.valoraciones-section {
+  margin-top: 20px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url(../images/estrella.png); /* Sustituye 'star.png' con tu imagen de estrella */
+  background-size: cover;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-clip: content-box;
+  transition: background-position 0.3s ease-in-out; /* Transición para la animación */
+}
+
+.rating input:checked ~ label,
+.rating label:hover {
+  background-color: gold; /* Cambia la posición para rellenar la estrella */
+}
+
+/* Historia de la empresa */
+.historia-section {
+  margin-top: 20px;
+}
+.rep_3,
+.rep_4,
+.rep_5 {
+  width: 150%;
+}
+.contenedorvin,
+.contenedorcd,
+.contenedorrep {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 30px;
+  justify-items: center;
+  align-content: center;
+}
+.object-container {
+  display: flex;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.object-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.object-image img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.object-details {
+  flex: 1;
+  padding: 20px;
+}
+
+.object-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.object-description {
+  margin-bottom: 20px;
+}
+
+.object-price {
+  color: red;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.add-to-cart-btn,
+.buy-now-btn {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.add-to-cart-btn:hover,
+.buy-now-btn:hover {
+  background-color: #45a049;
+}
+.reviews-container {
+  margin-top: 20px;
+}
+
+.review {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.review-author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.review-rating {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.review-comment {
+  margin-bottom: 10px;
+}
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #2980b9;
+}
+#viniloitem {
+  transform: rotateY(0deg);
+  transition: transform 1000ms;
+}
+#viniloitem:hover {
+  transform: rotateY(180deg);
+}
+/* Ajusta el tamaño de las imágenes en dispositivos móviles */
+@media screen and (max-width: 480px) {
+  .top-bar {
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+  }
+  .logo,
+  .hamburguesa,
+  .perfil,
+  .carrito {
+    width: 50%;
+  }
+
+  .top-bar img {
+    max-width: 100%; /* Asegura que las imágenes se escalen correctamente */
+    height: auto;
+  }
+  .contenedorvin,
+  .contenedorcd,
+  .contenedorrep {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    flex-direction: row;
+    flex-flow: wrap;
+    gap: 30px;
+    justify-items: center;
+    align-content: center;
+  }
+}

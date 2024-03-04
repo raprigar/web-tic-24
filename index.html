@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>vinilos flow urbano</title>
+    <link rel="stylesheet" href="web/Css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC" />
+    <title>vinilos flow urbano</title>
+  <link rel="icon" type="images/png"sizes="16x16" href="web/images/favicon.png" />
+  </head>
+  <body>
+    <!-- Barra superior -->
+   <div class="top-bar">
+      <div class="left-section">
+         <button type="button" class="open_button">
+          <img src="web/images/hamburguesa.png" class="imgheader" />
+      <div class="sidebar" style="width: 25%">
+       <div class="sidebarelements"><a href="index.html"><p>inicio</p></a></div>
+        <div class="sidebarelements"><a href="carrito.html"><p>carrito</p></a></div>
+          <div class="sidebarelements"><a href="web/pages/Pag_1.html"><p>vinilos</p></a></div>
+            <div class="sidebarelements"><a href="web/pages/Pag_2.html"><p>Cds</p></a></div>
+              <div class="sidebarelements"><a href="web/pages/Pag_2.html"><p>Reproductores</p></a></div>
+      </div>
+        <a href="index.html" class="logo"
+          ><img src="web/images/logo+nombre.png" alt=""
+        /></a>
+      </div>
+      <div class="right-section">
+        <a href="perfil.html" class="perfil"
+          ><img src="web/images/perfil.png" alt=""
+        /></a>
+        <a href="carrito.html" class="carrito"
+          ><img src="web/images/cesta.png" alt=""
+        /></a>
+      </div>
+    </div>
+    
+    <!-- Subdivisiones -->
+    <div class="subdivisions">
+      <a href="index.html" class="back-button">Inicio</a>
+      <a href="web/pages/Pag_1.html" class="subdivision">Vinilos</a>
+      <a href="web/pages/Pag_2.html" class="subdivision">CDs</a>
+      <a href="web/pages/Pag_3.html" class="subdivision">Reproductores</a>
+    </div>
+    <div class="main-content">
+      <h1>Bienvenido a nuestra tienda de música</h1>
+   <!-- Valoraciones -->
+   <h3>Como utlizar un reprodutor de vinilo</h3>
+<video controls width="640px" height="360px">
+  <source src="web/viedos y audios/video.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
+   <div class="valoraciones-section">
+    <h2>Valoraciones</h2>
+    <div class="rating" style="rotate:180deg">
+        <input type="radio" name="rating" id="star5"><label for="star5"></label>
+        <input type="radio" name="rating" id="star4"><label for="star4"></label>
+        <input type="radio" name="rating" id="star3"><label for="star3"></label>
+        <input type="radio" name="rating" id="star2"><label for="star2"></label>
+        <input type="radio" name="rating" id="star1"><label for="star1"></label>
+    </div>
+    <p>¡Déjanos tu valoración!</p>
+</div>
+
+<!-- Historia de la empresa -->
+<div class="historia-section">
+    <h2>Historia de la Empresa</h2>
+    <p>
+      En las vibrantes calles de la ciudad, entre murales de graffiti y el constante ritmo del asfalto, se alzaba "Vinilos Flow Urbano". Esta tienda, propiedad de un apasionado amante del hip-hop llamado Raúl, conocido por su nombre artístico "Radapri", se convirtió en un refugio para los fanáticos del rap y el hip-hop
+
+      Radapri, un antiguo rapero local que había vivido las etapas doradas del hip-hop, decidió emprender este viaje para ofrecer un espacio único a la creciente comunidad de amantes de la música urbana. Vinilos Flow Urbano no solo era una tienda de discos, sino un santuario donde los beats eran la esencia de la vida.
+      
+      Desde la entrada, los clientes eran recibidos por murales que contaban la historia del hip-hop y sus leyendas. La tienda no solo ofrecía una impresionante colección de vinilos de artistas icónicos, sino que también destacaba las creaciones de talentosos artistas locales. Vinilos Flow Urbano se convirtió en el epicentro de la escena hip-hop emergente de la ciudad.</p>
+</div>
+</div>
+
+<audio controls loop autoplay>
+  <source src="web/viedos y audios/fondo.mp3" type="audio/mp3">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+</div>
+    </div>
+  </body>
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const open_btn = document.querySelector(".open_button");
+    const close_btn = document.querySelector(".close_button");
+    open_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+    close_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+  </script>
+
+</html>

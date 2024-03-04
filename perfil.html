@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="web/Css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC" />
+    <title>vinilos flow urbano</title>
+  <link rel="icon" type="images/png"sizes="16x16" href="web/images/favicon.png"
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+      <div class="left-section">
+         <button type="button" class="open_button">
+          <img src="web/images/hamburguesa.png" class="imgheader" />
+        </button>
+      <div class="sidebar" style="width: 25%">
+       <div class="sidebarelements">vin
+       </div>
+        <div class="sidebarelements">vin</div>
+          <div class="sidebarelements">vin</div>
+            <div class="sidebarelements">vin </div>
+              <div class="sidebarelements">vin</div>
+      </div>
+        <a href="index.html" class="logo"
+          ><img src="web/images/logo+nombre.png" alt=""
+        /></a>
+      </div>
+      <div class="right-section">
+        <a href="perfil.html" class="perfil"
+          ><img src="web/images/perfil.png" alt=""
+        /></a>
+        <a href="carrito.html" class="carrito"
+          ><img src="web/images/cesta.png" alt=""
+        /></a>
+      </div>
+    </div>
+  
+
+    
+    <div class="sidebar" style="width: 100px;max-height:100px ; background-color: blue;">hola
+    </div>
+  </div>
+  
+    <!-- Subdivisiones -->
+    <div class="subdivisions">
+      <a href="index.html" class="back-button">Inicio</a>
+      <a href="web/pages/Pag_1.html" class="subdivision">Vinilos</a>
+      <a href="web/pages/Pag_2.html" class="subdivision">CDs</a>
+      <a href="web/pages/Pag_3.html" class="subdivision">Reproductores</a>
+    </div>
+    <div class="perfil-content">
+      <h2>Iniciar sesión</h2>
+      <form action="" method="post">
+        <div class="-group">
+          <label for="username">Nombre de usuario:</label>
+          <input type="text" id="username" name="username" required>
+      </div>
+          <div class="password-group">
+              <label for="password">Contraseña:</label>
+              <input type="password" id="password" name="password" required>
+          </div>
+  
+          <div class="button-group">
+              <button type="submit">Iniciar</button>
+              <a href="registro.html">¿No tienes cuenta? Pincha aqui</a>
+          </div>
+      </form>
+  </div>
+  
+    </div>
+  </body>
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const open_btn = document.querySelector(".open_button");
+    const close_btn = document.querySelector(".close_button");
+    open_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+    close_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+  </script>
+</html>

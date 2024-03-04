@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC" />
+    <title>vinilos flow urbano</title>
+    <link rel="icon" type="images/png"sizes="16x16" href="web/images/favicon.png">
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+      <div class="left-section">
+        <button type="button" class="open_button">
+          <img src="../images/hamburguesa.png" class="imgheader" />
+      <div class="sidebar" style="width: 25%">
+       <div class="sidebarelements">vin </div>
+        <div class="sidebarelements">vin</div>
+          <div class="sidebarelements">vin</div>
+            <div class="sidebarelements">vin </div>
+              <div class="sidebarelements">vin</div>
+      </div>
+      
+        <a href="../../index.html" class="logo"
+          ><img src="../images/logo+nombre.png" alt=""
+        /></a>
+      </div>
+      <div class="right-section">
+        <a href="../../perfil.html" class="perfil"
+          ><img src="../images/perfil.png" alt=""
+        /></a>
+        <a href="../../carrito.html" class="carrito"
+          ><img src="../images/cesta.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!-- Subdivisiones -->
+    <div class="subdivisions">
+      <a href="../../index.html" class="back-button">Volver</a>
+      <a href="Pag_1.html" class="subdivision">Vinilos</a>
+      <a href="Pag_2.html" class="subdivision">CDs</a>
+      <a href="Pag_3.html" class="subdivision">Reproductores</a>
+    </div>
+    <div class="contenedorrep">
+      <div class="elemento el1"><a href="item.html" class="item"><img src="../images/rep_1.png"/></a></div>
+      <div class="elemento el2"><a href="item.html" class="item"><img src="../images/rep_2.png"/></a></div>
+      <div class="elemento el3"><a href="item.html" class="item"><img src="../images/rep_3.png"/></a></div>
+      <div class="elemento el4"><a href="item.html" class="item"><img src="../images/rep_4.png"/></a></div>
+      <div class="elemento el5"><a href="item.html" class="item"><img src="../images/rep_5.png"/></a></div>
+      <div class="elemento el6"><a href="item.html" class="item"><img src="../images/rep_6.png"/></a></div>
+      <script>
+        const sidebar = document.querySelector(".sidebar");
+        const open_btn = document.querySelector(".open_button");
+        const close_btn = document.querySelector(".close_button");
+        open_btn.addEventListener("click", () => {
+          sidebar.classList.toggle("transladar_derecha");
+        });
+        close_btn.addEventListener("click", () => {
+          sidebar.classList.toggle("transladar_derecha");
+        });
+      </script>
+      </html>

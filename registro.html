@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="web/Css/estilo.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC" />
+    <title>vinilos flow urbano</title>
+  <link rel="icon" type="images/png"sizes="16x16" href="web/images/favicon.png"
+  </head>
+  <body>
+    <!-- Barra superior -->
+    <div class="top-bar">
+      <div class="left-section">
+         <button type="button" class="open_button">
+          <img src="web/images/hamburguesa.png" class="imgheader" />
+        </button>
+      <div class="sidebar" style="width: 25%">
+       <div class="sidebarelements">vin
+       </div>
+        <div class="sidebarelements">vin</div>
+          <div class="sidebarelements">vin</div>
+            <div class="sidebarelements">vin </div>
+              <div class="sidebarelements">vin</div>
+      </div>
+        <a href="index.html" class="logo"
+          ><img src="web/images/logo+nombre.png" alt=""
+        /></a>
+      </div>
+      <div class="right-section">
+        <a href="perfil.html" class="perfil"
+          ><img src="web/images/perfil.png" alt=""
+        /></a>
+        <a href="carrito.html" class="carrito"
+          ><img src="web/images/cesta.png" alt=""
+        /></a>
+      </div>
+    </div>
+  
+
+    
+    <div class="sidebar" style="width: 100px;max-height:100px ; background-color: blue;">hola
+    </div>
+  </div>
+  
+    <!-- Subdivisiones -->
+    <div class="subdivisions">
+      <a href="index.html" class="back-button">Inicio</a>
+      <a href="web/pages/Pag_1.html" class="subdivision">Vinilos</a>
+      <a href="web/pages/Pag_2.html" class="subdivision">CDs</a>
+      <a href="web/pages/Pag_3.html" class="subdivision">Reproductores</a>
+    </div>
+    <div class="perfil-content">
+      <h2>Registro de usuario</h2>
+      <form method="POST" action="" name="contact-form">
+        <input name="nombreCliente" 
+        type="text"
+         placeholder="Nombre" 
+         required
+          />
+        <input
+          name="apellidoCliente"
+          type="text"
+          placeholder="Apellido"
+          required
+        />
+        <input name="username" 
+        type="text" 
+        placeholder="Username" 
+        required 
+        />
+     
+      <input
+       type="password"
+        id="clave" 
+        name="clave" 
+        placeholder="contraseña"
+        required
+         />
+        <input
+        name="correoElectronicoCliente"
+        type="email"
+        placeholder="Email"
+        required
+      />
+        <input
+          name="edadCliente"
+          type="number"
+          min="1"
+          max="150"
+          placeholder="Edad"
+          required
+        />
+        <input name="paisCliente" 
+        type="text" 
+        placeholder="País" 
+        required 
+        />
+        <input
+          name="provinciaCliente"
+          type="text"
+          placeholder="Provincia"
+          required
+        />
+        <input
+        name="codigoPostalCliente"
+        type="number"
+        placeholder="Codigo postal"
+        required
+      />
+        <input
+          name="direccionCliente"
+          type="text"
+          placeholder="Dirección"
+          required
+        />
+      
+        <input 
+        type="submit"
+         value="Registrarse" 
+         id="submit" 
+         />
+  
+  
+        <!--<a href="https://youtube.com/"><button type="submit">Send</button></a>*/ -->
+        <a href="perfil.html">Login</a>
+      </form>
+      <script src="web/java/Google Sheet.js"></script>
+    </body>
+  </html>
+  </div>
+
+    </div>
+  </body>
+  <script>
+    const sidebar = document.querySelector(".sidebar");
+    const open_btn = document.querySelector(".open_button");
+    const close_btn = document.querySelector(".close_button");
+    open_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+    close_btn.addEventListener("click", () => {
+      sidebar.classList.toggle("transladar_derecha");
+    });
+  </script>
+</html>
